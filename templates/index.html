@@ -1,0 +1,33 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class=" col-6 mx-auto">
+  <h1 class="h3 mt-3">The Best of:</h1>
+
+<img id="office_logo" class="img-fluid my-2 py-3" src="{{ url_for('static', filename='images/office_logo.svg') }}" alt="The Office Logo">
+
+
+  <p>Arguably one of the greatest American sitcom television series, <a href="https://en.wikipedia.org/wiki/The_Office_(American_TV_series)" target="_blank">The Office</a> has been one of NBC's most successful programs to have ever aired. Winning numerous awards, this comedic mockumentary recevied significant acclaim from television critics during its 8-year-long run.</p>
+
+  <p>Adapted from the 2001-2003 BBC series, also called The Office, the show aimed to depict the mundane everyday lives of typical American office employees working for an underwhelming regional paper company.</p>
+
+  <p>Click any title to learn more:</p>
+
+
+
+<div class="col mx-auto">
+  <ul>
+  {% for pair in pairs %}
+      <li><a class="badge badge-dark" href="{{ url_for( 'detail', num=pair[0] ) }}">{{ pair[1] }}</a></li>
+  {% endfor %}
+  </ul>
+</div>
+
+<p class="font-italic text-muted">Logo image from <a href="https://commons.wikimedia.org/w/index.php?curid=8532920">Wikipedia</a> and used under creative commons license.</p>
+
+</div>
+
+
+{% endblock %}

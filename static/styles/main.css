@@ -1,0 +1,17 @@
+
+#line{
+  border-top: thick double #000;
+}
+
+.theoffice{
+  font-family: 'Kiwi Maru', serif;
+}
+
+#office_logo {
+  border-top: thick double #000;
+  border-bottom: thick double #000;
+}
+
+ul {
+  list-style-type: none;
+}
