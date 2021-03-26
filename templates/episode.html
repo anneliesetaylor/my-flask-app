@@ -23,33 +23,35 @@
   </div>
 </div>
 
+<div class="row">
+  <div class="col-8 mx-auto pt-3">
 
-<div class="col-8 mx-auto pt-3">
-  <table class="table table-responsive">
+    <table class="table table-responsive">
 
-    <thead class="thead">
-      <tr class="table-light">
-        <th scope="col">Season</th>
-        <th scope="col">Episode(s)</th>
-        <th scope="col">Written By</th>
-        <th scope="col">Directed By</th>
-        <th scope="col">Aired On</th>
-      </tr>
-    </thead>
+      <thead class="thead">
+        <tr class="table-light">
+          <th scope="col">Season</th>
+          <th scope="col">Episode(s)</th>
+          <th scope="col">Written By</th>
+          <th scope="col">Directed By</th>
+          <th scope="col">Aired On</th>
+        </tr>
+      </thead>
 
-    <tbody>
-      <tr class="table-light">
-        <th scope="row">{{ epi['season'] }}</th>
-        <th scope="row">{{ epi['ep#'] }}</th>
-        <th scope="row">{{ epi['written-by'] }}</th>
-        <th scope="row">{{ epi['directed-by'] }}</th>
-        <th scope="row">{{ epi['date-aired'] }}</th>
-      </tr>
-    </tbody>
+      <tbody>
+        <tr class="table-light">
+          <td>{{ epi['season'] }}</td>
+          <td>{{ epi['ep#'] }}</td>
+          <td>{{ epi['written-by'] }}</td>
+          <td>{{ epi['directed-by'] }}</td>
+          <td>{{ epi['date-aired'] }}</td>
+        </tr>
+      </tbody>
 
-  </table>
+    </table>
+
 </div>
-
+</div>
 
 
 <div class="row">
